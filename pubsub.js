@@ -29,15 +29,15 @@ pubsub.subscriber('page-load', function(data) {
 	console.log('It is published and i was subscriber', data);
 });
 
-pubsub.subscriber('page-load', function() {
+pubsub.subscriber('page-load', function(data) {
 	console.log('It is published and i was subscriber 2', data);
 });
 
-pubsub.subscriber('page-unload', function() {
+pubsub.subscriber('page-unload', function(data) {
 	console.log('It is published and i was subscriber', data);
 });
 
-pubsub.subscriber('page-unload', function() {
+pubsub.subscriber('page-unload', function(data) {
 	console.log('It is published and i was subscriber', data);
 });
 
